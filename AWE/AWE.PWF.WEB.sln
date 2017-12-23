@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWE.Framework.DataAccess", 
 		{A4F3CF78-075D-4894-9618-3643EE715757} = {A4F3CF78-075D-4894-9618-3643EE715757}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWE.PWF.Business", "AWE.PWF.Business\AWE.PWF.Business.csproj", "{94C82171-C239-48B2-9DA9-F4A5B153C053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWE.PWF.Entities", "AWE.PWF.Entities\AWE.PWF.Entities.csproj", "{B5A368A3-3389-4132-833B-223E35A5F4C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{D4C3CF62-3AC8-4E42-9EB2-E4AE25617D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C3CF62-3AC8-4E42-9EB2-E4AE25617D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4C3CF62-3AC8-4E42-9EB2-E4AE25617D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C82171-C239-48B2-9DA9-F4A5B153C053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C82171-C239-48B2-9DA9-F4A5B153C053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C82171-C239-48B2-9DA9-F4A5B153C053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C82171-C239-48B2-9DA9-F4A5B153C053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A368A3-3389-4132-833B-223E35A5F4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A368A3-3389-4132-833B-223E35A5F4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A368A3-3389-4132-833B-223E35A5F4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A368A3-3389-4132-833B-223E35A5F4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
