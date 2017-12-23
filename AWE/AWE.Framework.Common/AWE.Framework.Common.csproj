@@ -39,7 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attributes\ColumnAttribute.cs" />
+    <Compile Include="Attributes\TableAttribute.cs" />
+    <Compile Include="Common\ModelConvertHelper.cs" />
+    <Compile Include="Entity\Parameters.cs" />
+    <Compile Include="Enum\CommandTypeEnum.cs" />
+    <Compile Include="Enum\DataBaseTypeEnum.cs" />
+    <Compile Include="Enum\DataTypeEnum.cs" />
+    <Compile Include="Enum\IsolationLevelEnum.cs" />
+    <Compile Include="Enum\ParameterDirectionEnum.cs" />
+    <Compile Include="Enum\SQLOperateEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

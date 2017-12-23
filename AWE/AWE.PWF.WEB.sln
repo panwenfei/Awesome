@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWE.Framework.Common", "AWE.Framework.Common\AWE.Framework.Common.csproj", "{A4F3CF78-075D-4894-9618-3643EE715757}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWE.Framework.DataAccess", "AWE.Framework.DataAccess\AWE.Framework.DataAccess.csproj", "{D4C3CF62-3AC8-4E42-9EB2-E4AE25617D62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4F3CF78-075D-4894-9618-3643EE715757} = {A4F3CF78-075D-4894-9618-3643EE715757}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
