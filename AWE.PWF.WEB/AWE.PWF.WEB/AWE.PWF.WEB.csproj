@@ -232,8 +232,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\BasicSetting\Controllers\" />
-    <Folder Include="Areas\BasicSetting\Models\" />
-    <Folder Include="Areas\BasicSetting\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
