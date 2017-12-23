@@ -1,0 +1,5 @@
+C:\Users\WF\Desktop\gitpan\AWE.PWF.WEB\AWE.Framework.Common\bin\Debug\AWE.Framework.Common.dll
+C:\Users\WF\Desktop\gitpan\AWE.PWF.WEB\AWE.Framework.Common\bin\Debug\AWE.Framework.Common.pdb
+C:\Users\WF\Desktop\gitpan\AWE.PWF.WEB\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\AWE.PWF.WEB\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.dll
+C:\Users\WF\Desktop\gitpan\AWE.PWF.WEB\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.pdb
