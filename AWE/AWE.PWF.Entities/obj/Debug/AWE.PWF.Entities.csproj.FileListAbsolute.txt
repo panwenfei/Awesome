@@ -2,3 +2,4 @@ C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.d
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.pdb
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.dll
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.pdb
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.csprojResolveAssemblyReference.cache
