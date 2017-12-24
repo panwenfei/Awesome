@@ -14,7 +14,7 @@ namespace AWE.PWF.WEB.Lib
     {
         protected override void Initialize(RequestContext requestContext)
         {
-            base.Initialize(requestContext);
+            base.Initialize(requestContext); 
 
             //bool IsOK = false;
             ////获取当前访问页面地址  
