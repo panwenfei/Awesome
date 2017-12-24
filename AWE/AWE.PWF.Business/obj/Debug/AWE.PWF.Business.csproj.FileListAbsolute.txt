@@ -1,0 +1,4 @@
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.dll
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.pdb
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.dll
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.pdb
