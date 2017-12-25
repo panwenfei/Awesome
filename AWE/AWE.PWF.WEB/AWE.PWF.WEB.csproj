@@ -174,21 +174,21 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\BasicSetting\Views\web.config" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Theme\images\bg-default.png" />
+    <Content Include="Theme\images\bg-grey.png" />
+    <Content Include="Theme\images\bg-navygrey.png" />
+    <Content Include="Theme\images\bg-red.png" />
+    <Content Include="Theme\images\body-bg.png" />
+    <Content Include="Theme\images\header_line.png" />
+    <Content Include="Theme\scripts\jquery-1.10.2.js" />
+    <Content Include="Theme\scripts\jquery-1.10.2.min.js" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Theme\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Theme\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Theme\plugins\bootstrap\js\npm.js" />
     <Content Include="Theme\layui\css\layui.css" />
     <Content Include="Theme\layui\css\layui.mobile.css" />
     <Content Include="Theme\layui\css\modules\code.css" />
@@ -251,7 +251,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Theme\layui\css\modules\layer\default\Thumbs.db" />
     <Content Include="Theme\layui\examples\json\table\demo1.json" />
     <Content Include="Theme\layui\examples\json\table\demo2.json" />
@@ -268,14 +267,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Main.cshtml" />
     <Content Include="Views\Shared\_Title.cshtml" />
+    <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\BasicSetting\Controllers\" />
     <Folder Include="Theme\css\" />
-    <Folder Include="Theme\images\" />
-    <Folder Include="Theme\plugins\" />
-    <Folder Include="Theme\scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

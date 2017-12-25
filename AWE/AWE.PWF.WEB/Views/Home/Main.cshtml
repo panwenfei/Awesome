@@ -5,13 +5,20 @@
 
 <!DOCTYPE html>
 
-<html>
+<html style="height:100% !important;">
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>主页</title>
+    <link href="~/Theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <title>仓储管理系统</title>
 </head>
-<body>
-    <div> 
+@*当content内容的margin大于45时，样式错位【重点BUG】*@
+<body style="background-image: url('../../Theme/images/bg-default.png') !important; background-color:#3c3c3c !important;height:100% !important;margin-top:45px;">
+    @Html.Partial("_Top")
+    <div id="body" style="height:100% !important;margin-top:45px;min-height:800px; ">
+        <div id="content" style="margin-left: 150px;min-height:800px; margin-top:0px !important;border-bottom:2px solid #ddd; background:#f7f7f7 url('../../Theme/images/body-bg.png');">
+            <h1 style="padding:80px;">开发中……</h1>
+        </div>
     </div>
+    @Html.Partial("_Footer")
 </body>
 </html>
