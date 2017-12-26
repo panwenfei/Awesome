@@ -1,2 +1,40 @@
-﻿body {
+﻿#sidebar > ul {
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
 }
+
+    #sidebar > ul > li > a {
+        font-size: 14px;
+        font-weight: normal;
+        display: block;
+        position: relative;
+        margin: 0;
+        border: 0;
+        padding: 10px 15px;
+        color: #d1d0d0 !important;
+        border-radius: 0px !important;
+        text-decoration: none;
+        border-top: 1px solid #424242 !important;
+        border-bottom: 1px solid #282828 !important;
+        text-shadow: 0 1px 1px #333 !important;
+    }
+
+        #sidebar > ul > li > a:hover {
+            color: #fff !important;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+            background: #1e1f21;
+            background: -webkit-linear-gradient(bottom, #1e1f21, #232527);
+            background: -ms-linear-gradient(bottom, #1e1f21, #232527);
+            background: -moz-linear-gradient(bottom, #1e1f21, #232527);
+            background: -o-linear-gradient(bottom, #1e1f21, #232527);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1e1f21', endColorstr='#ff232527', GradientType=0);
+            border-top: 1px solid #303234;
+            border-bottom: 1px solid #161718;
+        }
+
+        #sidebar > ul > li > a i {
+            color: #999 !important;
+        }
