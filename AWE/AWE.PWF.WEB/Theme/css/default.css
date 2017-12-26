@@ -35,6 +35,18 @@
             border-bottom: 1px solid #161718;
         }
 
+        #sidebar > ul > li > a > arrow {
+            color: #fff;
+            float: right;
+            margin-top: 6px;
+            margin-right: 5px;
+            width: 0;
+            height: 0;
+            border-right: 5px solid #f3f3f3;
+            border-right: 4px solid transparent !important;
+            border-right: 4px solid transparent !important;
+        }
+
         #sidebar > ul > li > a i {
             color: #999 !important;
         }

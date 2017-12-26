@@ -3,3 +3,8 @@ C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.p
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.dll
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.pdb
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.pdb

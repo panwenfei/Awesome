@@ -5,3 +5,10 @@ C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framew
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.Common.pdb
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.Framework.DataAccess\obj\Debug\AWE.Framework.DataAccess.dll
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.Framework.DataAccess\obj\Debug\AWE.Framework.DataAccess.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.DataAccess.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.DataAccess.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.Common.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.Common.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\obj\Debug\AWE.Framework.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\obj\Debug\AWE.Framework.DataAccess.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.DataAccess\obj\Debug\AWE.Framework.DataAccess.pdb
