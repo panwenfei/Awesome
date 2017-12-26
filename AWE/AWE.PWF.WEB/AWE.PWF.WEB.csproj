@@ -175,6 +175,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Areas\BasicSetting\Views\web.config" />
+    <Content Include="Theme\css\default.css" />
     <Content Include="Theme\images\bg-default.png" />
     <Content Include="Theme\images\bg-grey.png" />
     <Content Include="Theme\images\bg-navygrey.png" />
@@ -275,7 +276,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\BasicSetting\Controllers\" />
-    <Folder Include="Theme\css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
