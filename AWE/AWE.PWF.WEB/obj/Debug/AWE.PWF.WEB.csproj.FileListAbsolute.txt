@@ -145,3 +145,4 @@ C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Securi
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.dll
 C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.pdb
+C:\Users\WF\Desktop\gitpan\AWE\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.csprojResolveAssemblyReference.cache
