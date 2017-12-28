@@ -14,7 +14,7 @@
     <script src="~/Theme/scripts/jquery-1.10.2.min.js"></script>
     <title>仓储管理系统</title>
     <style>
-        
+
     </style>
     <!--JSFile-->
     <script type="text/javascript">
@@ -24,9 +24,11 @@
                     if ($(this).children().siblings('ul.sub').css('display') == 'none') {
                         $(this).addClass('active');
                         $(this).children().siblings('ul.sub').slideDown(100).children('li');
+                        $(this).children().siblings('a').children().siblings('span.fa-caret-left').removeClass('fa fa-caret-left').addClass('fa fa-caret-down');
                     } else {
                         $(this).removeClass('active');
                         $(this).children().siblings('ul.sub').slideUp(100);
+                        $(this).children().siblings('a').children().siblings('span.fa-caret-down').removeClass('fa fa-caret-down').addClass('fa fa-caret-left');
                     }
                     return false;
                 });
@@ -35,7 +37,7 @@
     </script>
 </head>
 @*当content内容的margin大于45时，样式错位【重点BUG】*@
-<body style="background-image: url('../../Theme/images/bg-default.png') !important; background-color:#3c3c3c !important;height:100% !important;margin-top:45px;">
+<body style="background-image: url('../../Theme/images/bg-default.png') !important; background-color:#3c3c3c !important;height:100% !important;margin-top:45px;font-family:Arial;font-size:13px;">
     @Html.Partial("_Top")
     <div id="body" style="height:100% !important;margin-top:45px;">
         <div id="sidebar" style="height:100% !important;overflow:visible;position:absolute;">
@@ -46,7 +48,7 @@
                         <span class="title">系统设置</span>
                         <span class="fa fa-caret-left" style="float:right;margin-top:3px;"></span>
                     </a>
-                    <ul class="sub" style="padding-left:0;">
+                    <ul class="sub">
                         <li><a href="javascript:void(0)">权限分配</a></li>
                         <li><a href="javascript:void(0)">菜单管理</a></li>
                     </ul>
@@ -57,7 +59,7 @@
                         <span class="title">基础数据</span>
                         <span class="fa fa-caret-left" style="float:right;margin-top:3px;"></span>
                     </a>
-                    <ul class="sub" style="padding-left:0;">
+                    <ul class="sub">
                         <li><a href="javascript:void(0)">入库作业</a></li>
                         <li><a href="javascript:void(0)">出库作业</a></li>
                     </ul>
