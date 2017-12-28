@@ -176,6 +176,9 @@
     <Content Include="Global.asax" />
     <Content Include="Areas\BasicSetting\Views\web.config" />
     <Content Include="Theme\css\default.css" />
+    <Content Include="Theme\css\font-awesome.css" />
+    <Content Include="Theme\css\font-awesome.min.css" />
+    <Content Include="Theme\fonts\fontawesome-webfont.svg" />
     <Content Include="Theme\images\bg-default.png" />
     <Content Include="Theme\images\bg-grey.png" />
     <Content Include="Theme\images\bg-navygrey.png" />
@@ -283,6 +286,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="Theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Theme\fonts\FontAwesome.otf" />
+    <Content Include="Theme\css\font-awesome.css.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

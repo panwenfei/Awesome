@@ -13,3 +13,7 @@ C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.Common\bin\Debug\AWE.Framew
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.csprojResolveAssemblyReference.cache
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.pdb
+D:\2017\GitRepository\Awesome\AWE\AWE.Framework.Common\bin\Debug\AWE.Framework.Common.dll
+D:\2017\GitRepository\Awesome\AWE\AWE.Framework.Common\bin\Debug\AWE.Framework.Common.pdb
+D:\2017\GitRepository\Awesome\AWE\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.dll
+D:\2017\GitRepository\Awesome\AWE\AWE.Framework.Common\obj\Debug\AWE.Framework.Common.pdb
