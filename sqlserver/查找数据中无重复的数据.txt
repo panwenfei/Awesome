@@ -1,0 +1,4 @@
+select pep_b2_50 from pep_b2 group by pep_b2_50 having count(pep_b2_50)  > 1     单字段查询
+
+多字段查询
+select * from OrderDetail a  where exists (select orderid,productcode from OrderDetail where orderid=a.orderid and productcode=a.productcode group by orderid,productcode  having count(*) > 1)

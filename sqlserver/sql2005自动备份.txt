@@ -1,0 +1,20 @@
+1.sql代理无法开启
+sp_configure 'show advanced options', 1;   
+GO   
+RECONFIGURE;   
+GO   
+sp_configure 'Agent XPs', 1;   
+GO   
+RECONFIGURE   
+GO 
+
+sp_configure 'show advanced options', 1;   
+GO   
+RECONFIGURE WITH OVERRIDE;   --加上WITH OVERRIDE   
+GO   
+sp_configure 'Agent XPs', 1;   
+GO   
+RECONFIGURE WITH OVERRIDE     --加上WITH OVERRIDE   
+GO  
+
+2.无法将类型为“Microsoft.SqlServer.Management.Smo.SimpleObjectKey”的对象强制转换为类型“Microsoft.SqlServer.Management.Smo.Agent.JobObjectKey”。   (Microsoft.SqlServer.Smo) 

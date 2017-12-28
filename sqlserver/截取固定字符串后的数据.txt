@@ -1,0 +1,10 @@
+select substring(v04,CHARINDEX('-',v04)+1,4) from bi012
+
+12321-P12
+21312321-P3213
+
+获取P和后面的数据
+
+
+select REVERSE(substring(REVERSE(packcode),0,CHARINDEX('-',REVERSE(packcode))-1)) from Picking_Detail
+反转字符串 截取数据

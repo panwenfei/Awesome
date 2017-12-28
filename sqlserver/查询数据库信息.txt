@@ -1,0 +1,164 @@
+1.数据库里共有多少个用户表
+select count(*) from sysobjects where type='U'
+
+2.数据表有多少个字段
+select count(*) from syscolumns where id = object_id('表名')
+
+3.数据库存储路径
+sp_helpdb [数据库名]
+
+4.查询数据库的用户名
+select * from master..syslogins
+
+5.对所有数据库账号密码生成
+
+通用SQL模板
+--创建数据库帐号
+DECLARE @dbname varchar(100)
+DECLARE @user varchar(100)
+DECLARE @password varchar(100)
+DECLARE @sql varchar(max)
+SET @user = 'UfranimdA_gz'
+SET @password = 'o23#25R@8a8A!@23#@%'
+
+SET @sql = '
+USE [master]
+GO
+CREATE LOGIN ['+ @user + '] WITH PASSWORD=N'''+ @password +''', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=ON
+GO
+EXEC master..sp_addsrvrolemember @loginame = N'''+@user+''', @rolename = N''sysadmin''
+GO'
+PRINT(@sql)
+
+DECLARE @itemCur CURSOR
+SET @itemCur = CURSOR FOR 
+    SELECT name from sys.databases where state =0
+
+OPEN @itemCur
+FETCH NEXT FROM @itemCur INTO @dbname
+WHILE @@FETCH_STATUS=0
+BEGIN
+
+    SET @sql = '
+USE ['+ @dbname + ']
+GO
+CREATE USER ['+@user+'] FOR LOGIN ['+@user+']
+GO
+USE ['+ @dbname + ']
+GO
+ALTER USER ['+@user+'] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE ['+ @dbname + ']
+GO
+EXEC sp_addrolemember N''db_owner'', N'''+@user+'''
+GO'
+    PRINT(@sql)
+
+    FETCH NEXT FROM @itemCur INTO @dbname
+END 
+
+CLOSE @itemCur
+DEALLOCATE @itemCur
+
+--禁用sa帐号
+SET @sql = '
+USE [master]
+GO
+ALTER LOGIN [sa] DISABLE
+GO'
+PRINT(@sql)
+
+生成的脚本代码
+--创建数据库帐号密码
+USE [master]
+GO
+CREATE LOGIN [UfranimdA_gz] WITH PASSWORD=N'o23#25R@8a8A!@23#@%', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=ON
+GO
+EXEC master..sp_addsrvrolemember @loginame = N'UfranimdA_gz', @rolename = N'sysadmin'
+GO
+
+USE [master]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [master]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [master]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [tempdb]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [tempdb]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [tempdb]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [model]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [model]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [model]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [msdb]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [msdb]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [msdb]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [DBA_DB]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [DBA_DB]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [DBA_DB]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [TestDB]
+GO
+CREATE USER [UfranimdA_gz] FOR LOGIN [UfranimdA_gz]
+GO
+USE [TestDB]
+GO
+ALTER USER [UfranimdA_gz] WITH DEFAULT_SCHEMA=[dbo]
+GO
+USE [TestDB]
+GO
+EXEC sp_addrolemember N'db_owner', N'UfranimdA_gz'
+GO
+
+USE [master]
+GO
+ALTER LOGIN [sa] DISABLE
+GO
+
+
+

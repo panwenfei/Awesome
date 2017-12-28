@@ -1,0 +1,3 @@
+update a set a.ProduceStatus='¶³½á' from siteproduce a,Product b 
+where a.ProduceCode=b.ProduceCode 
+and datediff(d,a.PeriodValidity,getdate())>b.ChooseGoodsAhead

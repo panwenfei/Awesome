@@ -1,0 +1,44 @@
+1.获取所有用户名:
+SELECT name FROM Sysusers where status='2' and islogin='1'
+islogin='1'表示帐户
+islogin='0'表示角色
+status='2'表示用户帐户
+status='0'表示糸统帐户
+
+
+2.获取所有数据库名:
+SELECT Name FROM Master..SysDatabases ORDER BY Name
+
+
+3.获取所有表名
+SELECT Name FROM SysObjects Where XType='U' ORDER BY Name
+XType='U':表示所有用户表;
+XType='S':表示所有系统表;
+
+
+4.获取所有字段名:
+SELECT Name FROM SysColumns WHERE id=Object_Id('表名')
+
+
+5.获取数据库所有类型
+select name from systypes 
+
+
+6.获取主键字段
+SELECT name FROM SysColumns WHERE id=Object_Id('表名') and colid=(select top 1 keyno from sysindexkeys where id=Object_Id('表名'))
+
+ 
+
+7、获取字段类型 
+
+select a.name as [column],b.name as type from syscolumns a,systypes b where a.id=object_id('表名') and a.xtype=b.xtype
+
+或者可以通过存储过程 exec sp_help 表名
+
+  
+
+8、取表结构 
+
+select column_name,data_type,character_maximum_length from information_schema.columns where table_name = '表名' 
+
+
