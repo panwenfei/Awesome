@@ -14,16 +14,22 @@
     <script src="~/Theme/scripts/jquery-1.10.2.min.js"></script>
     <title>仓储管理系统</title>
     <style>
-        .blocka { display: none; }
+        
     </style>
     <!--JSFile-->
     <script type="text/javascript">
         $(function () {
-            $("#li").on('click', function () {
-                $(this).addClass('active').siblings('li').removeClass('active');
-                $(this).children().siblings("ul").toggleClass('blocka');
-                $(this).children().siblings("fa fa-caret-left").removeClass('fa fa-caret-left').addClass('fa fa-caret-down');
-                return false;
+            $('#sidebar ul').find('li').each(function () {
+                $(this).click(function () {
+                    if ($(this).children().siblings('ul.sub').css('display') == 'none') {
+                        $(this).addClass('active');
+                        $(this).children().siblings('ul.sub').slideDown(100).children('li');
+                    } else {
+                        $(this).removeClass('active');
+                        $(this).children().siblings('ul.sub').slideUp(100);
+                    }
+                    return false;
+                });
             });
         });
     </script>
@@ -51,10 +57,14 @@
                         <span class="title">基础数据</span>
                         <span class="fa fa-caret-left" style="float:right;margin-top:3px;"></span>
                     </a>
+                    <ul class="sub" style="padding-left:0;">
+                        <li><a href="javascript:void(0)">入库作业</a></li>
+                        <li><a href="javascript:void(0)">出库作业</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <div id="content" style="margin-left: 150px;height:100% !important;margin-top:0px !important;border-bottom:2px solid #ddd; background:#f7f7f7 url('../../Theme/images/body-bg.png');">
+        <div id="content" style="margin-left: 180px;height:100% !important;margin-top:0px !important;border-bottom:2px solid #ddd; background:#f7f7f7 url('../../Theme/images/body-bg.png');">
             <h1 style="padding:80px;">开发中……</h1>
         </div>
     </div>
