@@ -6,6 +6,7 @@
 
 ## 目录
 ```
+Chrome | Firefox | 搜狗 | IE | 360 
 1.前端技术
 |-- 字体图表：Font Awesome/Glyphicon/Iconfont
 |-- CSS框架：Bootstrap v3.3.7
