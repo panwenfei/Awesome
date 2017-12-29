@@ -20,5 +20,4 @@
 |-- 数据处理：Ado.net
 |-- 安全验证：Forms表单验证
 |-- 日志管理：Log4net
-`-- widget      # Web 组件
 ```
