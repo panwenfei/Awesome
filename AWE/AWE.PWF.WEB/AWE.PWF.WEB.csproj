@@ -164,6 +164,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Lib\ControllerBase.cs" />
+    <Compile Include="Lib\MasterPage.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -292,6 +293,20 @@
     <Content Include="Theme\fonts\fontawesome-webfont.woff2" />
     <Content Include="Theme\fonts\FontAwesome.otf" />
     <Content Include="Theme\css\font-awesome.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AWE.PWF.Business\AWE.PWF.Business.csproj">
+      <Project>{94c82171-c239-48b2-9da9-f4a5b153c053}</Project>
+      <Name>AWE.PWF.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWE.PWF.Common\AWE.PWF.Common.csproj">
+      <Project>{58a325c7-b848-414e-bb31-8739451c1bda}</Project>
+      <Name>AWE.PWF.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWE.PWF.Entities\AWE.PWF.Entities.csproj">
+      <Project>{b5a368a3-3389-4132-833b-223e35a5f4c9}</Project>
+      <Name>AWE.PWF.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

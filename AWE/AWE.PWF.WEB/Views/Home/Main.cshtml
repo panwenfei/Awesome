@@ -8,26 +8,43 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    @*<link href="~/Theme/css/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="~/Theme/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Theme/css/font-awesome.css" rel="stylesheet" />
     <link href="~/Theme/css/default.css" rel="stylesheet" />
     <script src="~/Theme/scripts/jquery-1.10.2.min.js"></script>
     <title>仓储管理系统</title>
     <style>
-
     </style>
     <!--JSFile-->
     <script type="text/javascript">
         $(function () {
-            $('#sidebar ul').find('li').each(function () {
+            $('#sidebar > ul').find('li').each(function () {
                 $(this).click(function () {
                     if ($(this).children().siblings('ul.sub').css('display') == 'none') {
+                        $('#sidebar > ul').find('li').removeClass('active');
+                        $('#sidebar > ul').find('li').children().siblings('ul.sub').slideUp(100).children('li');
+                        $('#sidebar > ul').find('li').children().siblings('ul.sub').siblings('a').children().siblings('span.fa-caret-down').removeClass('fa fa-caret-down').addClass('fa fa-caret-left');
                         $(this).addClass('active');
                         $(this).children().siblings('ul.sub').slideDown(100).children('li');
                         $(this).children().siblings('a').children().siblings('span.fa-caret-left').removeClass('fa fa-caret-left').addClass('fa fa-caret-down');
+                        $(this).children().siblings('ul.sub').find('li').each(function () {
+                            $('ul.sub').find('li').click(function () {
+                                $.ajax({
+                                    url: $(this).children().attr('href'),
+                                    post: 'post',
+                                    dataType: 'html',
+                                    success: function (data) {
+                                        if (data) {
+                                            $('#content').html('');
+                                            $('#content').html(data);
+                                        }
+                                    }
+                                });
+                            });
+                        });
                     } else {
                         $(this).removeClass('active');
-                        $(this).children().siblings('ul.sub').slideUp(100);
+                        $(this).children().siblings('ul.sub').slideUp(100).children('li');
                         $(this).children().siblings('a').children().siblings('span.fa-caret-down').removeClass('fa fa-caret-down').addClass('fa fa-caret-left');
                     }
                     return false;
@@ -36,38 +53,15 @@
         });
     </script>
 </head>
-@*当content内容的margin大于45时，样式错位【重点BUG】*@
 <body style="background-image: url('../../Theme/images/bg-default.png') !important; background-color:#3c3c3c !important;height:100% !important;margin-top:45px;font-family:Arial;font-size:13px;">
     @Html.Partial("_Top")
     <div id="body" style="height:100% !important;margin-top:45px;">
-        <div id="sidebar" style="height:100% !important;overflow:visible;position:absolute;">
-            <ul>
-                <li id="li" class="">
-                    <a href="javascript:void(0)">
-                        <i class="glyphicon glyphicon-user"></i>
-                        <span class="title">系统设置</span>
-                        <span class="fa fa-caret-left" style="float:right;margin-top:3px;"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="javascript:void(0)">权限分配</a></li>
-                        <li><a href="javascript:void(0)">菜单管理</a></li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="javascript:void(0)">
-                        <i class="glyphicon glyphicon-camera"></i>
-                        <span class="title">基础数据</span>
-                        <span class="fa fa-caret-left" style="float:right;margin-top:3px;"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="javascript:void(0)">入库作业</a></li>
-                        <li><a href="javascript:void(0)">出库作业</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        @Html.Partial("_LeftMenu")
         <div id="content" style="margin-left: 180px;height:100% !important;margin-top:0px !important;border-bottom:2px solid #ddd; background:#f7f7f7 url('../../Theme/images/body-bg.png');">
-            <h1 style="padding:80px;">开发中……</h1>
+            <div style="text-align:center;">
+                <br /><br /><br /><br /><br />
+                <h1>开发中……</h1>
+            </div>
         </div>
     </div>
     @Html.Partial("_Footer")

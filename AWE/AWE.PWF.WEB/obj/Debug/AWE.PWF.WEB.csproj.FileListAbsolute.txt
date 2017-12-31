@@ -217,7 +217,6 @@ C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Se
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.csprojResolveAssemblyReference.cache
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.pdb
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.WEB.dll.config
@@ -294,3 +293,14 @@ D:\2017\GitRepository\Awesome\AWE\AWE.PWF.WEB\bin\zh-Hans\Microsoft.Owin.Securit
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.dll
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.pdb
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\obj\Debug\AWE.PWF.WEB.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Business.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Common.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Entities.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.Framework.DataAccess.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.Framework.Common.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Business.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Common.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.PWF.Entities.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.Framework.DataAccess.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.WEB\bin\AWE.Framework.Common.pdb

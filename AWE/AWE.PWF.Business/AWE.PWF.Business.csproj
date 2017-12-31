@@ -39,8 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicSetting\Class1.cs" />
+    <Compile Include="BasicSetting\SystemSettingManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AWE.Framework.Common\AWE.Framework.Common.csproj">
+      <Project>{a4f3cf78-075d-4894-9618-3643ee715757}</Project>
+      <Name>AWE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWE.Framework.DataAccess\AWE.Framework.DataAccess.csproj">
+      <Project>{d4c3cf62-3ac8-4e42-9eb2-e4ae25617d62}</Project>
+      <Name>AWE.Framework.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWE.PWF.Entities\AWE.PWF.Entities.csproj">
+      <Project>{b5a368a3-3389-4132-833b-223e35a5f4c9}</Project>
+      <Name>AWE.PWF.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

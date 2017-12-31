@@ -12,3 +12,5 @@ D:\2017\GitRepository\Awesome\AWE\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.dl
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.pdb
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.dll
 D:\2017\GitRepository\Awesome\AWE\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Entities\bin\Debug\AWE.Framework.Common.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE\AWE.PWF.Entities\bin\Debug\AWE.Framework.Common.pdb

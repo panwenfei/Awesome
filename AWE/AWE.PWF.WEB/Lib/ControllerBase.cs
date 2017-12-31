@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -14,7 +15,7 @@ namespace AWE.PWF.WEB.Lib
     {
         protected override void Initialize(RequestContext requestContext)
         {
-            base.Initialize(requestContext); 
+            base.Initialize(requestContext);
 
             //bool IsOK = false;
             ////获取当前访问页面地址  
@@ -46,6 +47,6 @@ namespace AWE.PWF.WEB.Lib
             //        requestContext.HttpContext.Response.End();
             //    }
             //}
-        } 
+        }
     }
 }

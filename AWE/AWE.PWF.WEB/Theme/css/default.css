@@ -5,7 +5,7 @@
 	/*激活菜单*/
 	#sidebar > ul > li.active { border-right: 4px solid #00BCD4; }
 		#sidebar > ul > li.active > a { background: #252728 !important; border-top: 1px solid #1c1d1e !important; border-bottom: 1px solid #242628 !important; }
-	#sidebar > ul > li > a > .fa .fa-caret-left { color: #fff; float: right; margin-top: 6px; margin-right: 5px; width: 0; height: 0; border-right: 5px solid #f3f3f3; border-right: 4px solid transparent !important; border-right: 4px solid transparent !important; }
+	#sidebar > ul > li > a > .fa .fa-caret-left { color: #fff; float: right; margin-top: 6px; padding-right: 5px; width: 0; height: 0; border-right: 5px solid #f3f3f3; border-right: 4px solid transparent !important; border-right: 4px solid transparent !important; }
 	#sidebar > ul > li > a i { color: #999 !important; }
 	/*二级菜单*/
 	#sidebar > ul > li .active > ul .sub { display: block !important; width: 180px; margin: 0; padding-left: 0 !important; border-radius: 0; }
