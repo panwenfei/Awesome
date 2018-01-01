@@ -48,15 +48,47 @@
                     return false;
                 });
             });
+            masterUI.ToggleMenu();
         });
+
+        var masterUI = {
+            ToggleMenu: function () {
+                //用于左侧菜单展开以及显示
+                $(".sidebar-toggler").click(function () {
+                    var MenuStatus = "open";
+                    if (!$("#body").hasClass("sidebar-closed")) {
+                        $("#body").addClass("sidebar-closed");
+                        MenuStatus = "close";
+                    } else {
+                        $("#body").removeClass("sidebar-closed");
+                        MenuStatus = "open";
+                    }
+                    //var param = {};
+                    //param["MenuStatus"] = MenuStatus;
+                    //$.gitAjax({
+                    //    url: "/Common/SetMenuStatus", type: "post", data: param, success: function (result) {
+                    //    }
+                    //});
+                });
+            }
+        }
     </script>
 </head>
-<body style="background-image: url('../../Theme/images/bg-default.png') !important; background-color:#3c3c3c !important;height:100% !important;margin-top:51px;font-family:Arial;font-size:13px;">
+<body class="fixed-top">
     @Html.Partial("_Top")
-    <div id="body" style="height:100% !important;margin-top:52px;">
+    <div id="body" class="">
         @Html.Partial("_LeftMenu")
-        <div id="content" style="margin-left: 180px;height:100% !important;margin-top:0px !important;border-bottom:2px solid #ddd; background:#f7f7f7 url('../../Theme/images/body-bg.png');">
-            <div style="text-align:center;">
+        <div id="container">
+            <div>
+                <ul class="address">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a href="javascript:void(0)">首页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
                 <br /><br /><br /><br /><br />
                 <h1>开发中……</h1>
             </div>
