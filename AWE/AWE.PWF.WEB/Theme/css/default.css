@@ -8,6 +8,7 @@
 }
 
 #body {
+    min-height: 800px;
     height: 100% !important;
     margin-top: 52px;
 }
@@ -22,6 +23,8 @@
 
 #content {
     text-align: center;
+    /*height: 100%;*/
+    padding:0px 20px 20px;
 }
 
 #header {
@@ -214,7 +217,7 @@
     border-top: 1px solid #ddd !important;
     border-bottom: 1px solid #ddd !important;
     background-color: #EFEFEF;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 8px 15px;
 }
 
@@ -230,3 +233,5 @@
         .address li  a {
             padding:0px 3px;
         }
+
+/*样式重写*/

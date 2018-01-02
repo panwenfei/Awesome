@@ -188,6 +188,7 @@
     <Content Include="Theme\images\bg-red.png" />
     <Content Include="Theme\images\body-bg.png" />
     <Content Include="Theme\images\header_line.png" />
+    <Content Include="Theme\images\title.png" />
     <Content Include="Theme\plugins\bootstrap-table\bootstrap-table-mobile.min.js" />
     <Content Include="Theme\plugins\bootstrap-table\bootstrap-table.min.css" />
     <Content Include="Theme\plugins\bootstrap-table\bootstrap-table.min.js" />
