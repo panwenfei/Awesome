@@ -1,4 +1,8 @@
-﻿.fixed-top {
+﻿html {
+    height: 100% !important;
+}
+
+.fixed-top {
     background-image: url('../../Theme/images/bg-default.png') !important;
     background-color: #3c3c3c !important;
     height: 100% !important;
@@ -24,7 +28,7 @@
 #content {
     text-align: center;
     /*height: 100%;*/
-    padding:0px 20px 20px;
+    padding: 0px 20px 20px;
 }
 
 #header {
@@ -103,107 +107,107 @@
     width: 180px;
 }
 
-#sidebar > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    margin-top: 41px;
-}
-
-    #sidebar > ul > li > a {
-        font-size: 14px;
-        font-weight: normal;
-        display: block;
-        position: relative;
-        margin: 0;
-        border: 0;
-        padding: 10px 15px;
-        color: #d1d0d0 !important;
-        border-radius: 0px !important;
-        text-decoration: none;
-        border-top: 1px solid #424242 !important;
-        border-bottom: 1px solid #282828 !important;
-        text-shadow: 0 1px 1px #333 !important;
-    }
-
-        #sidebar > ul > li > a:hover {
-            color: #fff !important;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-            background: #1e1f21;
-            background: -webkit-linear-gradient(bottom, #1e1f21, #232527);
-            background: -ms-linear-gradient(bottom, #1e1f21, #232527);
-            background: -moz-linear-gradient(bottom, #1e1f21, #232527);
-            background: -o-linear-gradient(bottom, #1e1f21, #232527);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1e1f21', endColorstr='#ff232527', GradientType=0);
-            border-top: 1px solid #303234;
-            border-bottom: 1px solid #161718;
-        }
-    /*激活菜单*/
-    #sidebar > ul > li.active {
-        border-right: 4px solid #00BCD4;
-    }
-
-        #sidebar > ul > li.active > a {
-            background: #252728 !important;
-            border-top: 1px solid #1c1d1e !important;
-            border-bottom: 1px solid #242628 !important;
-        }
-
-    #sidebar > ul > li > a > .fa .fa-caret-left {
-        color: #fff;
-        float: right;
-        margin-top: 6px;
-        padding-right: 5px;
-        width: 0;
-        height: 0;
-        border-right: 5px solid #f3f3f3;
-        border-right: 4px solid transparent !important;
-        border-right: 4px solid transparent !important;
-    }
-
-    #sidebar > ul > li > a i {
-        color: #999 !important;
-    }
-    /*二级菜单*/
-    #sidebar > ul > li .active > ul .sub {
-        display: block !important;
-        width: 180px;
-        margin: 0;
-        padding-left: 0 !important;
-        border-radius: 0;
-    }
-
-    #sidebar > ul > li > ul .sub {
-        display: none !important;
+    #sidebar > ul {
         list-style: none;
-        clear: both;
-        margin: 8px 0 8px 15px;
-        padding: 0px !important;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        margin-top: 41px;
     }
 
-        #sidebar > ul > li > ul .sub > li {
+        #sidebar > ul > li > a {
+            font-size: 14px;
+            font-weight: normal;
+            display: block;
+            position: relative;
+            margin: 0;
+            border: 0;
+            padding: 10px 15px;
+            color: #d1d0d0 !important;
+            border-radius: 0px !important;
+            text-decoration: none;
+            border-top: 1px solid #424242 !important;
+            border-bottom: 1px solid #282828 !important;
+            text-shadow: 0 1px 1px #333 !important;
+        }
+
+            #sidebar > ul > li > a:hover {
+                color: #fff !important;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+                background: #1e1f21;
+                background: -webkit-linear-gradient(bottom, #1e1f21, #232527);
+                background: -ms-linear-gradient(bottom, #1e1f21, #232527);
+                background: -moz-linear-gradient(bottom, #1e1f21, #232527);
+                background: -o-linear-gradient(bottom, #1e1f21, #232527);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1e1f21', endColorstr='#ff232527', GradientType=0);
+                border-top: 1px solid #303234;
+                border-bottom: 1px solid #161718;
+            }
+        /*激活菜单*/
+        #sidebar > ul > li.active {
+            border-right: 4px solid #00BCD4;
+        }
+
+            #sidebar > ul > li.active > a {
+                background: #252728 !important;
+                border-top: 1px solid #1c1d1e !important;
+                border-bottom: 1px solid #242628 !important;
+            }
+
+        #sidebar > ul > li > a > .fa .fa-caret-left {
+            color: #fff;
+            float: right;
+            margin-top: 6px;
+            padding-right: 5px;
+            width: 0;
+            height: 0;
+            border-right: 5px solid #f3f3f3;
+            border-right: 4px solid transparent !important;
+            border-right: 4px solid transparent !important;
+        }
+
+        #sidebar > ul > li > a i {
+            color: #999 !important;
+        }
+        /*二级菜单*/
+        #sidebar > ul > li .active > ul .sub {
+            display: block !important;
+            width: 180px;
+            margin: 0;
+            padding-left: 0 !important;
+            border-radius: 0;
+        }
+
+        #sidebar > ul > li > ul .sub {
+            display: none !important;
+            list-style: none;
+            clear: both;
+            margin: 8px 0 8px 15px;
+            padding: 0px !important;
+        }
+
+            #sidebar > ul > li > ul .sub > li {
+                background: none !important;
+                padding: 0;
+            }
+
+        #sidebar > ul > li > ul > li > a {
+            color: #ccc;
+            font-size: 13px;
+            font-weight: normal;
             background: none !important;
-            padding: 0;
+            text-decoration: none;
+            text-shadow: 0 1px 1px #000;
+            display: block;
+            position: relative;
+            margin: 2px 0px;
+            padding: 4px 10px 4px 30px !important;
         }
 
-    #sidebar > ul > li > ul > li > a {
-        color: #ccc;
-        font-size: 13px;
-        font-weight: normal;
-        background: none !important;
-        text-decoration: none;
-        text-shadow: 0 1px 1px #000;
-        display: block;
-        position: relative;
-        margin: 2px 0px;
-        padding: 4px 10px 4px 30px !important;
-    }
-
-        #sidebar > ul > li > ul > li > a:hover {
-            color: #fff !important;
-            background: #555 !important;
-        }
+            #sidebar > ul > li > ul > li > a:hover {
+                color: #fff !important;
+                background: #555 !important;
+            }
 
 
 /*点击菜单*/
@@ -230,8 +234,8 @@
         line-height: 20px;
     }
 
-        .address li  a {
-            padding:0px 3px;
+        .address li a {
+            padding: 0px 3px;
         }
 
-/*样式重写*/
+

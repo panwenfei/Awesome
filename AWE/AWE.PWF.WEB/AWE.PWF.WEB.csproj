@@ -189,66 +189,23 @@
     <Content Include="Theme\images\body-bg.png" />
     <Content Include="Theme\images\header_line.png" />
     <Content Include="Theme\images\title.png" />
-    <Content Include="Theme\plugins\bootstrap-table\bootstrap-table-mobile.min.js" />
-    <Content Include="Theme\plugins\bootstrap-table\bootstrap-table.min.css" />
-    <Content Include="Theme\plugins\bootstrap-table\bootstrap-table.min.js" />
+    <Content Include="Theme\plugins\bootstrap-table\css\bootstrap-table.css" />
+    <Content Include="Theme\plugins\bootstrap-table\css\bootstrap-table.min.css" />
+    <Content Include="Theme\plugins\bootstrap-table\js\bootstrap-table.js" />
+    <Content Include="Theme\plugins\bootstrap-table\js\bootstrap-table.min.js" />
+    <Content Include="Theme\plugins\bootstrap-table\locale\bootstrap-table-zh-CN.js" />
     <Content Include="Theme\plugins\bootstrap-table\locale\bootstrap-table-zh-CN.min.js" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Theme\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Theme\plugins\bootstrap\js\npm.js" />
     <Content Include="Theme\scripts\jquery-1.10.2.js" />
     <Content Include="Theme\scripts\jquery-1.10.2.min.js" />
     <Content Include="Theme\plugins\bootstrap\css\bootstrap.min.css" />
     <Content Include="Theme\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Theme\plugins\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Theme\plugins\layui\css\layui.css" />
-    <Content Include="Theme\plugins\layui\css\layui.mobile.css" />
-    <Content Include="Theme\plugins\layui\css\modules\code.css" />
-    <Content Include="Theme\plugins\layui\css\modules\laydate\default\laydate.css" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\icon-ext.png" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\icon.png" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\layer.css" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\loading-0.gif" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\loading-1.gif" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\loading-2.gif" />
-    <Content Include="Theme\plugins\layui\examples\admin.html" />
-    <Content Include="Theme\plugins\layui\examples\all.html" />
-    <Content Include="Theme\plugins\layui\examples\button.html" />
-    <Content Include="Theme\plugins\layui\examples\carousel.html" />
-    <Content Include="Theme\plugins\layui\examples\code.html" />
-    <Content Include="Theme\plugins\layui\examples\element.html" />
-    <Content Include="Theme\plugins\layui\examples\extend.html" />
-    <Content Include="Theme\plugins\layui\examples\flow.html" />
-    <Content Include="Theme\plugins\layui\examples\form.html" />
-    <Content Include="Theme\plugins\layui\examples\js\child\test.js" />
-    <Content Include="Theme\plugins\layui\examples\js\index.js" />
-    <Content Include="Theme\plugins\layui\examples\laydate.html" />
-    <Content Include="Theme\plugins\layui\examples\layedit.html" />
-    <Content Include="Theme\plugins\layui\examples\layer.html" />
-    <Content Include="Theme\plugins\layui\examples\layout.html" />
-    <Content Include="Theme\plugins\layui\examples\laypage.html" />
-    <Content Include="Theme\plugins\layui\examples\responsive.html" />
-    <Content Include="Theme\plugins\layui\examples\table.html" />
-    <Content Include="Theme\plugins\layui\examples\tree.html" />
-    <Content Include="Theme\plugins\layui\examples\upload.html" />
-    <Content Include="Theme\plugins\layui\examples\util.html" />
-    <Content Include="Theme\plugins\layui\examples\xingzuo.html" />
-    <Content Include="Theme\plugins\layui\font\iconfont.svg" />
-    <Content Include="Theme\plugins\layui\js\layui.all.js" />
-    <Content Include="Theme\plugins\layui\js\layui.js" />
-    <Content Include="Theme\plugins\layui\js\modules\carousel.js" />
-    <Content Include="Theme\plugins\layui\js\modules\code.js" />
-    <Content Include="Theme\plugins\layui\js\modules\element.js" />
-    <Content Include="Theme\plugins\layui\js\modules\flow.js" />
-    <Content Include="Theme\plugins\layui\js\modules\form.js" />
-    <Content Include="Theme\plugins\layui\js\modules\jquery.js" />
-    <Content Include="Theme\plugins\layui\js\modules\laydate.js" />
-    <Content Include="Theme\plugins\layui\js\modules\layedit.js" />
-    <Content Include="Theme\plugins\layui\js\modules\layer.js" />
-    <Content Include="Theme\plugins\layui\js\modules\laypage.js" />
-    <Content Include="Theme\plugins\layui\js\modules\laytpl.js" />
-    <Content Include="Theme\plugins\layui\js\modules\mobile.js" />
-    <Content Include="Theme\plugins\layui\js\modules\table.js" />
-    <Content Include="Theme\plugins\layui\js\modules\tree.js" />
-    <Content Include="Theme\plugins\layui\js\modules\upload.js" />
-    <Content Include="Theme\plugins\layui\js\modules\util.js" />
+    <Content Include="Theme\scripts\jquery.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -260,13 +217,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Theme\plugins\layui\css\modules\layer\default\Thumbs.db" />
-    <Content Include="Theme\plugins\layui\examples\json\table\demo1.json" />
-    <Content Include="Theme\plugins\layui\examples\json\table\demo2.json" />
-    <Content Include="Theme\plugins\layui\examples\json\upload\demoLayEdit.json" />
-    <Content Include="Theme\plugins\layui\font\iconfont.eot" />
-    <Content Include="Theme\plugins\layui\font\iconfont.ttf" />
-    <Content Include="Theme\plugins\layui\font\iconfont.woff" />
     <Content Include="Views\Shared\_LeftMenu.cshtml" />
     <Content Include="Views\Shared\_Top.cshtml">
       <SubType>
@@ -291,7 +241,6 @@
     <Content Include="packages.config" />
     <Content Include="Areas\BasicSetting\Views\Function\List.cshtml" />
     <Content Include="Areas\BasicSetting\Views\Function\FunctionModal.cshtml" />
-    <None Include="Project_Readme.html" />
     <Content Include="Theme\fonts\fontawesome-webfont.eot" />
     <Content Include="Theme\fonts\fontawesome-webfont.ttf" />
     <Content Include="Theme\fonts\fontawesome-webfont.woff" />
@@ -312,6 +261,12 @@
       <Project>{b5a368a3-3389-4132-833b-223e35a5f4c9}</Project>
       <Name>AWE.PWF.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Theme\plugins\bootstrap\css\bootstrap.min.css.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

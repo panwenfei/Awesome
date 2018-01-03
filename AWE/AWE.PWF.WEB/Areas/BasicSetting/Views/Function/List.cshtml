@@ -9,29 +9,33 @@
     <meta name="viewport" content="width=device-width" />
     <title>仓储管理系统</title>
     <link href="~/Theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Theme/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
-    <link href="~/Theme/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Theme/css/style.css" rel="stylesheet" />
+    <link href="~/Theme/plugins/bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet" />>
+    <style>
+    </style>
 </head>
 <body>
     <div style="background:none repeat scroll 0 0 #F9F9F9;border:1px solid #CDCDCD;width:100%;border-radius: 0px 0px 3px 3px;">
         <div style="background: url('../../../../Theme/images/title.png') no-repeat;width:100%; height: 36px; border-radius: 6px 3px 0px 0px; padding-left: 15px; margin-bottom: 15px; margin-top: 0px; border-bottom: 1px solid #e0dede;">
             <h4 style="float: left; font-size: 13px; font-weight: bold; color: #fff;"><i class="fa fa-globe" style="padding-right: 3px;"></i>菜单管理</h4>
             <div style="float:right;padding:5px 15px;">
-                <button class="btn btn-success" style="padding:3px 6px;font-size:12px;"><i class="fa fa-plus"></i>新增</button>
-                <button class="btn btn-warning" style="padding:3px 6px;font-size:12px;"><i class="fa fa-download"></i>导入</button>
-                <button class="btn btn-info" style="padding:3px 6px;font-size:12px;"><i class="fa fa-upload"></i>导出</button>
+                <button class="btn btn-success"><i class="fa fa-plus"></i>新增</button>
+                <button class="btn btn-warning"><i class="fa fa-download"></i>导入</button>
+                <button class="btn btn-info"><i class="fa fa-upload"></i>导出</button>
             </div>
         </div>
-        <div style="width:100%; display:block; padding:15px;">
+        <div style="width:100%;height:100%; display:block; padding:15px;">
             <div style="">
+                <div class="form-group">
+
+                </div>
             </div>
-            <table id="function" class="table table-responsive table-bordered" data-mobile-responsive="true"></table>
+            <table id="function" class="table table-responsive text-nowrap"></table>
         </div>
     </div>
-    <script src="~/Theme/scripts/jquery-1.10.2.min.js"></script>
+    <!--JSFile-->
+    <script src="~/Theme/scripts/jquery.min.js"></script>
     <script src="~/Theme/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/Theme/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="~/Theme/plugins/bootstrap-table/js/bootstrap-table.min.js"></script>
     <script src="~/Theme/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
     <script>
         $(function () {
@@ -44,7 +48,7 @@
                 pagination: true,                   //是否显示分页（*）
                 sortable: false,                     //是否启用排序
                 sortName: 'ParentSort',
-                sortOrder: "desc",                   //排序方式
+                sortOrder: "ASC",                   //排序方式
                 queryParamsType: "",
                 queryParams: _queryParams,          //传递参数（*）
                 sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
@@ -53,7 +57,7 @@
                 pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
                 strictSearch: true,
                 minimumCountColumns: 2,             //最少允许的列数
-                clickToSelect: true,                //是否启用点击选中行
+                clickToSelect: false,                //是否启用点击选中行
                 height: 520,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
                 uniqueId: "ID",                     //每一行的唯一标识，一般为主键列
                 search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
@@ -63,7 +67,7 @@
                 cardView: false,                    //是否显示详细视图
                 detailView: false,                   //是否显示父子表
                 columns: [{ checkbox: true },
-                    { field: 'FunctionId', title: 'ID' },
+                    //{ field: 'FunctionId', title: 'ID' },
                     { field: 'FunctionName', title: '名称' },
                     { field: 'FunctionCode', title: '编码' },
                     { field: 'Description', title: '描述' },
@@ -96,9 +100,9 @@
             }
         }
 
-        function operateFormatter(value,row,index) {
-            return ['<button type="button" class="btn btn-primary" id="edit" style="padding:3px 6px;font-size:12px;"><i class="fa fa-edit"></i>编辑</button>',
-                   '<button type="button" class="btn btn-danger" id="delete" style="padding:3px 6px;font-size:12px;"><i class="fa fa-remove"></i>删除</button>'].join();
+        function operateFormatter(value, row, index) {
+            return ['<button type="button" class="btn btn-primary" id="edit"><i class="fa fa-pencil"></i></button>',
+                   '<button type="button" class="btn btn-danger" id="delete"><i class="fa fa-remove"></i></button>'].join();
         }
 
         window.operateEvents = {
