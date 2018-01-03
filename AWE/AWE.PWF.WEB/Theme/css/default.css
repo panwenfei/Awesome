@@ -145,7 +145,7 @@
             }
         /*激活菜单*/
         #sidebar > ul > li.active {
-            border-right: 4px solid #00BCD4;
+            border-right: 4px solid blue;
         }
 
             #sidebar > ul > li.active > a {
