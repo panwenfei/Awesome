@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>仓储管理系统</title>
     <link href="~/Theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Theme/plugins/bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet" />>
+    <link href="~/Theme/plugins/bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet" />
     <style>
     </style>
 </head>
@@ -18,9 +18,11 @@
         <div style="background: url('../../../../Theme/images/title.png') no-repeat;width:100%; height: 36px; border-radius: 6px 3px 0px 0px; padding-left: 15px; margin-bottom: 15px; margin-top: 0px; border-bottom: 1px solid #e0dede;">
             <h4 style="float: left; font-size: 13px; font-weight: bold; color: #fff;"><i class="fa fa-globe" style="padding-right: 3px;"></i>菜单管理</h4>
             <div style="float:right;padding:5px 15px;">
-                <button class="btn btn-success"><i class="fa fa-plus"></i>新增</button>
-                <button class="btn btn-warning"><i class="fa fa-download"></i>导入</button>
-                <button class="btn btn-info"><i class="fa fa-upload"></i>导出</button>
+                <div class="btn-group">
+                    <button class="btn btn-success"><i class="fa fa-plus"></i>新增</button>
+                    <button class="btn btn-warning"><i class="fa fa-download"></i>导入</button>
+                    <button class="btn btn-info"><i class="fa fa-upload"></i>导出</button>
+                </div>
             </div>
         </div>
         <div style="width:100%;height:100%; display:block; padding:15px;">
@@ -29,90 +31,92 @@
 
                 </div>
             </div>
-            <table id="function" class="table table-responsive text-nowrap"></table>
+            <table id="function" class="table text-nowrap"></table>
         </div>
     </div>
     <!--JSFile-->
-    <script src="~/Theme/scripts/jquery.min.js"></script>
+    @*<script src="~/Theme/scripts/jquery.min.js"></script>*@
+    <script src="~/Theme/scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Theme/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/Theme/plugins/bootstrap-table/js/bootstrap-table.min.js"></script>
     <script src="~/Theme/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
-    <script>
-        $(function () {
-            $('#function').bootstrapTable({
-                url: '/BasicSetting/Function/GetFunctionList',         //请求后台的URL（*）
-                method: 'get',                      //请求方式（*）
-                //toolbar: '#toolbar',                //工具按钮用哪个容器
-                striped: true,                      //是否显示行间隔色
-                cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
-                pagination: true,                   //是否显示分页（*）
-                sortable: false,                     //是否启用排序
-                sortName: 'ParentSort',
-                sortOrder: "ASC",                   //排序方式
-                queryParamsType: "",
-                queryParams: _queryParams,          //传递参数（*）
-                sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
-                pageNumber: 1,                       //初始化加载第一页，默认第一页
-                pageSize: 10,                       //每页的记录行数（*）
-                pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
-                strictSearch: true,
-                minimumCountColumns: 2,             //最少允许的列数
-                clickToSelect: false,                //是否启用点击选中行
-                height: 520,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
-                uniqueId: "ID",                     //每一行的唯一标识，一般为主键列
-                search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
-                showColumns: false,                  //是否显示所有的列
-                showRefresh: false,                  //是否显示刷新按钮
-                showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
-                cardView: false,                    //是否显示详细视图
-                detailView: false,                   //是否显示父子表
-                columns: [{ checkbox: true },
-                    //{ field: 'FunctionId', title: 'ID' },
-                    { field: 'FunctionName', title: '名称' },
-                    { field: 'FunctionCode', title: '编码' },
-                    { field: 'Description', title: '描述' },
-                    { field: 'ParaentID', title: '父ID', formatter: RootFormatter },
-                    { field: 'Url', title: '地址' },
-                    { field: 'ParentSort', title: '父排序' },
-                    { field: 'FunctionSort', title: '子排序' },
-                    { field: '', title: '操作', event: operateEvents, formatter: operateFormatter },
-                ]
-            });
+    <script type="text/javascript">
+    $(function () {
+        $('#function').bootstrapTable({
+            url: '/BasicSetting/Function/GetFunctionList',         //请求后台的URL（*）
+            method: 'get',                      //请求方式（*）
+            //toolbar: '#toolbar',                //工具按钮用哪个容器
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: false,                     //是否启用排序
+            sortName: 'ParentSort',
+            sortOrder: "ASC",                   //排序方式
+            queryParamsType: "",
+            queryParams: _queryParams,          //传递参数（*）
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 10,                       //每页的记录行数（*）
+            //pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+            strictSearch: true,
+            minimumCountColumns: 2,             //最少允许的列数
+            clickToSelect: false,                //是否启用点击选中行
+            height: 520,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            uniqueId: "ID",                     //每一行的唯一标识，一般为主键列
+            search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            showColumns: false,                  //是否显示所有的列
+            showRefresh: false,                  //是否显示刷新按钮
+            showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            detailView: false,                   //是否显示父子表
+            columns: [{ checkbox: true },
+                //{ field: 'FunctionId', title: 'ID' },
+                { field: 'FunctionName', title: '名称' },
+                { field: 'FunctionCode', title: '编码' },
+                { field: 'Description', title: '描述' },
+                { field: 'ParaentID', title: '父ID', formatter: RootFormatter },
+                { field: 'Url', title: '地址' },
+                { field: 'ParentSort', title: '父排序' },
+                { field: 'FunctionSort', title: '子排序' },
+                { field: '', title: '操作', event: operateEvents, formatter: operateFormatter },
+            ]
         });
+    });
 
-        //参数设置
-        function _queryParams(params) {
-            var temp = {
-                limit: params.pageSize,
-                page: params.pageNumber,
-                sortName: params.sortName,
-                sortOrder: params.sortOrder,
-            };
-            return temp;
-        }
-
-        //标别菜单父ID
-        function RootFormatter(value, row, index) {
-            if (value == '00000000-0000-0000-0000-000000000000') {
-                return '<span class="label label-primary">' + value + '</span>';
-            } else {
-                return '<span class="label label-default">' + value + '</span>';
-            }
-        }
-
-        function operateFormatter(value, row, index) {
-            return ['<button type="button" class="btn btn-primary" id="edit"><i class="fa fa-pencil"></i></button>',
-                   '<button type="button" class="btn btn-danger" id="delete"><i class="fa fa-remove"></i></button>'].join();
-        }
-
-        window.operateEvents = {
-            'click .btn-primary': function (e, value, row, index) {
-                alert("编辑");
-            },
-            'click .delete': function (e, value, row, index) {
-                alert("删除");
-            },
+    //参数设置
+    function _queryParams(params) {
+        var temp = {
+            limit: params.pageSize,
+            page: params.pageNumber,
+            sortName: params.sortName,
+            sortOrder: params.sortOrder,
         };
+        return temp;
+    }
+
+    //标别菜单父ID
+    function RootFormatter(value, row, index) {
+        if (value == '00000000-0000-0000-0000-000000000000') {
+            return '<span class="label label-primary">' + value + '</span>';
+        } else {
+            return '<span class="label label-default">' + value + '</span>';
+        }
+    }
+
+    function operateFormatter(value, row, index) {
+        return ['<button type="button" class="btn btn-primary" id="edit"><i class="fa fa-pencil"></i></button>',
+               '<button type="button" class="btn btn-danger" id="delete"><i class="fa fa-remove"></i></button>'].join();
+    }
+
+    window.operateEvents = {
+        'click .btn-primary': function (e, value, row, index) {
+            alert("编辑");
+        },
+        'click .delete': function (e, value, row, index) {
+            alert("删除");
+        },
+    };
     </script>
+
 </body>
 </html>

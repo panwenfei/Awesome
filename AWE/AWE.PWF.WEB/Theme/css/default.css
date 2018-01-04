@@ -100,7 +100,7 @@
 }
 
 .sidebar-closed > #container {
-    width: auto !important;
+    margin-left:40px !important;
 }
 /*一级菜单*/
 #sidebar {
