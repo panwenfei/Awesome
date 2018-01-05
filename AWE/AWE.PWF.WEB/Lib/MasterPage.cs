@@ -30,7 +30,7 @@ namespace AWE.PWF.WEB.Lib
                 {
                     sb.AppendFormat("<li class=\"has-sub\">");
                     sb.AppendFormat("<a href=\"javascript:void(0);\">");
-                    sb.AppendFormat("<i class=\"fa {0}\" style=\"margin-right:3px;\"></i>", string.IsNullOrEmpty(dr["Icon"].ToString()) == true ? "fa-folder-o" : dr["Icon"]);
+                    sb.AppendFormat("<i class=\"fa {0}\" style=\"margin-right:6px;\"></i>", string.IsNullOrEmpty(dr["Icon"].ToString()) == true ? "fa-folder-o" : dr["Icon"]);
                     sb.AppendFormat("<span class=\"title\">{0}</span>", dr["FunctionName"]);
                     sb.AppendFormat("<span class=\"fa fa-caret-left\" style=\"float:right;margin-top:3px;\"></span>");
                     sb.AppendFormat("</a>");
