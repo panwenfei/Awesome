@@ -26,7 +26,7 @@
                         $(this).children().siblings('a').children().siblings('span.fa-caret-left').removeClass('fa fa-caret-left').addClass('fa fa-caret-down');
                         $(this).children().siblings('ul.sub').find('li').each(function () {
                             $('ul.sub').find('li').click(function () {
-                                var n = '<iframe width="100%" height="100%" src="' + $(this).children().attr('href') + '" frameborder="0" seamless></iframe>';
+                                var n = '<iframe width="100%" height="100%" marginwidth="0"  scrolling="no" marginheight="0" src="' + $(this).children().attr('href') + '" frameborder="0"></iframe>';
                             //    $.ajax({
                             //        url: $(this).children().attr('href'),
                             //        post: 'post',
@@ -39,7 +39,7 @@
                             //        }
                                 //    });
                                 $('#content').html('');
-                                $('#content').append(n);
+                                $('#content').html(n);
                             });
                         });
                     } else {
@@ -86,6 +86,8 @@
             </div>
             <div id="content">
                 <br /><br /><br /><br /><br />
+                <h1>开发中……</h1>
+                <h1>开发中……</h1>
                 <h1>开发中……</h1>
             </div>
         </div>

@@ -5,21 +5,22 @@
 .fixed-top {
     background-image: url('../../Theme/images/bg-default.png') !important;
     background-color: #3c3c3c !important;
-    height: 100% !important;
-    margin-top: 51px;
+    /*height: 100% !important;*/
+    /*margin-top: 51px;*/
     font-family: Arial;
     font-size: 13px;
 }
 
 #body {
-    min-height: 800px;
-    height: 100% !important;
+    /*min-height: 800px;
+    height: 100% !important;*/
     margin-top: 52px;
 }
 
 #container {
     margin-left: 180px;
-    height: 100% !important;
+    min-height: 800px !important;
+    /*height: 100% !important;*/
     margin-top: 0px !important;
     border-bottom: 2px solid #ddd;
     background: #f7f7f7 url('../../Theme/images/body-bg.png');
@@ -27,7 +28,8 @@
 
 #content {
     text-align: center;
-    height: 100%;
+    min-height: 800px !important;
+    /*height: 100%;*/
     padding: 0px 20px 20px;
 }
 
@@ -56,8 +58,10 @@
         }
 
 #footer {
+    height: 30px;
     padding: 8px 15px 5px 15px;
-    bottom: 0;
+    bottom: 0 !important;
+    left: 0 !important;
     font-size: 12px;
     color: #999;
     text-align: right;
