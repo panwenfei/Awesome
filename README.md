@@ -24,3 +24,6 @@
 |-- 安全验证：Forms表单验证
 |-- 日志管理：Log4net
 ```
+图片展示
+![layout](image/layout.jpg)
+![modal](image/modal.jpg)
