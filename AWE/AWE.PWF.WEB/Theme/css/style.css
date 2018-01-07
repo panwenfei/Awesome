@@ -1,9 +1,0 @@
-﻿table thead tr th, table tbody tr td {
-    text-align: center;
-}
-
-/*样式重写*/
-.btn, .pagination > li > a {
-    padding: 3px 6px !important;
-    font-size: 12px !important;
-}

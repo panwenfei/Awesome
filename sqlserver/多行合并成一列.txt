@@ -1,1 +1,0 @@
-select stuff((select ','+ TrainNo from ReceiptGoodsMain a where project='Ì©¿Æµç×Ó' and WorkTime>'2017-3-09 00:00:00.000'   FOR xml PATH('') ),1,1,'') as b

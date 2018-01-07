@@ -1,0 +1,245 @@
+﻿html {
+    height: 100% !important;
+}
+
+.fixed-top {
+    background-image: url('../../Theme/images/bg-default.png') !important;
+    background-color: #3c3c3c !important;
+    /*height: 100% !important;*/
+    /*margin-top: 51px;*/
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#body {
+    /*min-height: 800px;
+    height: 100% !important;*/
+    margin-top: 52px;
+}
+
+#container {
+    margin-left: 180px;
+    min-height: 800px !important;
+    /*height: 100% !important;*/
+    margin-top: 0px !important;
+    border-bottom: 2px solid #ddd;
+    background: #f7f7f7 url('../../Theme/images/body-bg.png');
+}
+
+#content {
+    text-align: center;
+    min-height: 800px !important;
+    /*height: 100%;*/
+    padding: 0px 20px 20px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 0px !important;
+}
+
+    #header .navbar-inner {
+        width: 100%;
+        padding-top: 3px;
+        border-top: 0px !important;
+        box-shadow: 0 1px 10px rgba(120,120,120,.1);
+    }
+
+        #header .navbar-inner .navbar-brand {
+            width: 180px;
+            color: white;
+            padding: 15px 20px 15px;
+            margin-left: -15px;
+            font-size: 20px;
+            margin-top: -1px;
+        }
+
+#footer {
+    height: 30px;
+    padding: 8px 15px 5px 15px;
+    bottom: 0 !important;
+    left: 0 !important;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+}
+
+#sidebar {
+    height: 100% !important;
+    overflow: visible;
+    position: absolute;
+}
+
+    #sidebar .sidebar-toggler {
+        border-radius: 4px 0px 0px 4px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        float: right;
+        background-color: #e9ebec;
+        margin-top: 10px;
+    }
+
+        #sidebar .sidebar-toggler:before {
+            margin: 0px 2px 0px 8px;
+            display: block;
+            font-size: 18px;
+            font-family: FontAwesome;
+            height: auto;
+            content: "\f104";
+            font-weight: 300;
+            text-shadow: none;
+        }
+
+.sidebar-closed #sidebar .sidebar-toggler:before {
+    margin: 0px 2px 0px 8px;
+    content: "\f105";
+}
+
+.sidebar-closed > #sidebar {
+    width: 40px !important;
+}
+
+.sidebar-closed > #container {
+    margin-left:40px !important;
+}
+/*一级菜单*/
+#sidebar {
+    width: 180px;
+}
+
+    #sidebar > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        margin-top: 41px;
+    }
+
+        #sidebar > ul > li > a {
+            font-size: 14px;
+            font-weight: normal;
+            display: block;
+            position: relative;
+            margin: 0;
+            border: 0;
+            padding: 10px 15px;
+            color: #d1d0d0 !important;
+            border-radius: 0px !important;
+            text-decoration: none;
+            border-top: 1px solid #424242 !important;
+            border-bottom: 1px solid #282828 !important;
+            text-shadow: 0 1px 1px #333 !important;
+        }
+
+            #sidebar > ul > li > a:hover {
+                color: #fff !important;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+                background: #1e1f21;
+                background: -webkit-linear-gradient(bottom, #1e1f21, #232527);
+                background: -ms-linear-gradient(bottom, #1e1f21, #232527);
+                background: -moz-linear-gradient(bottom, #1e1f21, #232527);
+                background: -o-linear-gradient(bottom, #1e1f21, #232527);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1e1f21', endColorstr='#ff232527', GradientType=0);
+                border-top: 1px solid #303234;
+                border-bottom: 1px solid #161718;
+            }
+        /*激活菜单*/
+        #sidebar > ul > li.active {
+            border-right: 4px solid blue;
+        }
+
+            #sidebar > ul > li.active > a {
+                background: #252728 !important;
+                border-top: 1px solid #1c1d1e !important;
+                border-bottom: 1px solid #242628 !important;
+            }
+
+        #sidebar > ul > li > a > .fa .fa-caret-left {
+            color: #fff;
+            float: right;
+            margin-top: 6px;
+            padding-right: 5px;
+            width: 0;
+            height: 0;
+            border-right: 5px solid #f3f3f3;
+            border-right: 4px solid transparent !important;
+            border-right: 4px solid transparent !important;
+        }
+
+        #sidebar > ul > li > a i {
+            color: #999 !important;
+        }
+        /*二级菜单*/
+        #sidebar > ul > li .active > ul .sub {
+            display: block !important;
+            width: 180px;
+            margin: 0;
+            padding-left: 0 !important;
+            border-radius: 0;
+        }
+
+        #sidebar > ul > li > ul .sub {
+            display: none !important;
+            list-style: none;
+            clear: both;
+            margin: 8px 0 8px 15px;
+            padding: 0px !important;
+        }
+
+            #sidebar > ul > li > ul .sub > li {
+                background: none !important;
+                padding: 0;
+            }
+
+        #sidebar > ul > li > ul > li > a {
+            color: #ccc;
+            font-size: 13px;
+            font-weight: normal;
+            background: none !important;
+            text-decoration: none;
+            text-shadow: 0 1px 1px #000;
+            display: block;
+            position: relative;
+            margin: 2px 0px;
+            padding: 4px 10px 4px 30px !important;
+        }
+
+            #sidebar > ul > li > ul > li > a:hover {
+                color: #fff !important;
+                background: #555 !important;
+            }
+
+
+/*点击菜单*/
+.sub {
+    display: none;
+    padding-left: 0;
+}
+
+.address {
+    font-size: 13px;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    background-color: #EFEFEF;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+}
+
+    .address li {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /*float: left;*/
+        line-height: 20px;
+    }
+
+        .address li a {
+            padding: 0px 3px;
+        }
+
+

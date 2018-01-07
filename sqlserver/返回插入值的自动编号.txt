@@ -1,2 +1,0 @@
-insert into mytable values('ÀîËÄ')
-select @@identity
