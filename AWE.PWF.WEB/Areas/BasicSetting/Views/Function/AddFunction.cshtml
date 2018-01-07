@@ -1,0 +1,65 @@
+﻿<div class="modal fade" id="FModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" style="min-width:780px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body" style="max-width:730px;">
+                <form id="fm" class="form-horizontal" role="form">
+                    <input type="hidden" id="FunctionId" name="FunctionId" />
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="FunctionName" class="col-xs-2 control-label left">名称：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <input type="text" class="form-control" id="FunctionName" name="FunctionName" placeholder="请输入名称">
+                            </div>
+                            <label for="FunctionCode" class="col-xs-2 control-label left" style="text-align:right;">编码：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <input type="text" class="form-control" id="FunctionCode" name="FunctionCode" placeholder="请输入编码">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="ParaentID" class="col-xs-2 control-label left"><span style="color:red;">*</span>目录：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <select class="form-control selectpicker" id="ParaentID" name="ParaentID">
+                                    <option value="" selected>请选择目录</option>
+                                </select>
+                            </div>
+                            <label for="Url" class="col-lg-2 col-xs-2 control-label left">地址：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <input type="text" class="form-control" id="Url" name="Url" placeholder="请输入地址">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="ParentSort" class="col-xs-2 control-label left">父级排序：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <input type="text" class="form-control" id="ParentSort" name="ParentSort" placeholder="请输入类型">
+                            </div>
+                            <label for="FunctionSort" class="col-lg-2 col-xs-2 control-label left">子级排序：</label>
+                            <div class="col-lg-4 col-xs-4 right">
+                                <input type="text" class="form-control" id="FunctionSort" name="FunctionSort" placeholder="请输入等级">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="Tariff" class="col-lg-2 col-xs-2 control-label left">描述：</label>
+                            <div class="col-lg-10 col-xs-10 right">
+                                <input type="text" class="form-control" id="Tariff" name="Tariff" placeholder="请输入描述">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i>关闭</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-save"></i>提交</button>
+            </div>
+        </div>
+    </div>
+</div>

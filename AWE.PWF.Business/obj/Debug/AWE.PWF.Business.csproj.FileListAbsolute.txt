@@ -33,8 +33,6 @@ C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.d
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.PWF.Business.pdb
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.PWF.Entities.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.PWF.Entities.pdb
-C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.Framework.Common.pdb
-C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\bin\Debug\AWE.Framework.DataAccess.pdb
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.csprojResolveAssemblyReference.cache
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Business\obj\Debug\AWE.PWF.Business.pdb

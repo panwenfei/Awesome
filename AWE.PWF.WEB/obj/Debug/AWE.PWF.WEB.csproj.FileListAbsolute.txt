@@ -448,8 +448,6 @@ C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\Microsoft.Owin.Security.OAuth
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\AWE.Framework.DataAccess.pdb
-C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\AWE.Framework.Common.pdb
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\zh-Hans\System.Web.Helpers.resources.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\zh-Hans\System.Web.Mvc.resources.dll
 C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.WEB\bin\zh-Hans\System.Web.Optimization.resources.dll

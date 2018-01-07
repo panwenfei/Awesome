@@ -12,15 +12,15 @@
 }
 
 #body {
-    /*min-height: 800px;
-    height: 100% !important;*/
+    /*min-height: 800px;*/
+    height: 100% !important;
     margin-top: 52px;
 }
 
 #container {
     margin-left: 180px;
-    min-height: 800px !important;
-    /*height: 100% !important;*/
+    /*min-height: 800px !important;*/
+    height: 100% !important;
     margin-top: 0px !important;
     border-bottom: 2px solid #ddd;
     background: #f7f7f7 url('../../Theme/images/body-bg.png');
@@ -28,7 +28,7 @@
 
 #content {
     text-align: center;
-    min-height: 800px !important;
+    height: 800px !important;
     /*height: 100%;*/
     padding: 0px 20px 20px;
 }

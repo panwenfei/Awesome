@@ -4,6 +4,29 @@
 
 /*样式重写*/
 .btn, .pagination > li > a {
-    padding: 3px 6px !important;
-    font-size: 12px !important;
+    padding: 4px 6px !important;
+    font-size: 13px !important;
+}
+
+    .btn > i {
+        padding-right: 3px;
+    }
+
+.left {
+    padding: 6px 0;
+    color: #666a6c;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: right;
+    margin: 0px;
+}
+
+.right {
+    padding: 0;
+    text-align: left;
+}
+
+.form-control {
+    height: 29px !important;
+    padding: 3px 6px;
 }

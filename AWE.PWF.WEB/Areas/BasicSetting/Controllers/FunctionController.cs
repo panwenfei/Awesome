@@ -18,7 +18,7 @@ namespace AWE.PWF.WEB.Areas.BasicSetting.Controllers
             return View();
         }
 
-        public ActionResult FunctionModal()
+        public ActionResult AddFunction()
         {
             return View();
         }
