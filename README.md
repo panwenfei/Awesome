@@ -25,5 +25,5 @@
 |-- 日志管理：Log4net
 ```
 图片展示
-![layout](image/layout.jpg)
-![modal](image/modal.jpg)
+![layout](image/layout.png)
+![modal](image/modal.png)
