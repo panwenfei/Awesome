@@ -21,3 +21,9 @@ C:\Users\WF\Desktop\Awesome\AWE.PWF.Entities\bin\Debug\AWE.Framework.Common.pdb
 C:\Users\WF\Desktop\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.csprojResolveAssemblyReference.cache
 C:\Users\WF\Desktop\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.dll
 C:\Users\WF\Desktop\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\bin\Debug\AWE.PWF.Entities.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\bin\Debug\AWE.Framework.Common.pdb
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.csprojResolveAssemblyReference.cache
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.dll
+C:\Users\WF\Desktop\gitpan\Awesome\AWE.PWF.Entities\obj\Debug\AWE.PWF.Entities.pdb
