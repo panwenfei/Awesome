@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AWE.Framework.Common">
+      <HintPath>..\AWE.Framework.DataAccess\bin\Debug\AWE.Framework.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,12 +44,6 @@
   <ItemGroup>
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AWE.Framework.Common\AWE.Framework.Common.csproj">
-      <Project>{a4f3cf78-075d-4894-9618-3643ee715757}</Project>
-      <Name>AWE.Framework.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
